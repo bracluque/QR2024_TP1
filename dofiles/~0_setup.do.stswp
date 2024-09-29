@@ -19,25 +19,24 @@ dir // Windows
 * -----------------------------------------------
 * Step 2: Initialize Git Repository
 * -----------------------------------------------
-*! git init  // Initialize a new Git repository (if not already initialized)
+*! git init  
 
 * -----------------------------------------------
 * Step 3: Stage and Commit Changes
 * -----------------------------------------------
 *! git add README.md  // Stage the README file
-*! git commit -m "[BC-20240929]: Add README file"  // Commit changes
+*! git commit -m "[BC-20240929]: Add README file"  
 
 * -----------------------------------------------
 * Step 4: Configure Remote Repository
 * -----------------------------------------------
-*! git remote add origin https://github.com/bracluque/QR2024_TP1.git  // Add remote repository
+*! git remote add origin https://github.com/bracluque/QR2024_TP1.git  
 
 * -----------------------------------------------
 * Step 5: Push to Remote Repository
 * -----------------------------------------------
 *! git checkout -b main 		// Create and switch to the 'main' branch if it's not already created
-*! git push -u origin main 	// Push local commits to the main branch of the remote repository
-
+*! git push -u origin main 	
 /* 
 * -------------------------------------------------
 * Create a batch file to automate Git commands
@@ -63,10 +62,8 @@ dir // Windows
 */
 
 * -----------------------------------------------
-* Step 6 : Execute Batch File for Version Control
+* Step : Execute Batch File for Version Control
 * -----------------------------------------------
-*! mygit.bat  // Run the batch file to automate Git operations. Before running, set your folder structure.
-
-
+*! mygit.bat 
 
 
