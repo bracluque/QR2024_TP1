@@ -1,0 +1,32 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{1}{D{.}{.}{-1}}}
+\toprule
+                &Salario horario (log)         \\
+                &\multicolumn{1}{c}{(1)}         \\
+\midrule
+Años de educación aprobados&   -0.039\sym{***}\\
+                &  (0.010)         \\
+\addlinespace
+Años de educación aprobados $\times$ Años de educación aprobados&    0.005\sym{***}\\
+                &  (0.000)         \\
+\addlinespace
+Edad            &    0.035\sym{***}\\
+                &  (0.004)         \\
+\addlinespace
+Edad $\times$ Edad&   -0.000\sym{***}\\
+                &  (0.000)         \\
+\addlinespace
+Mujer (=1)      &   -0.142\sym{***}\\
+                &  (0.015)         \\
+\addlinespace
+Reside en Ciudad de Buenos Aires (=1)&    0.136\sym{***}\\
+                &  (0.017)         \\
+\addlinespace
+Constant        &    2.534\sym{***}\\
+                &  (0.097)         \\
+\bottomrule
+\multicolumn{2}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{2}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}
