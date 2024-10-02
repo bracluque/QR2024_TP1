@@ -1,34 +1,14 @@
 /*******************************************************************************
-*  QR: UNLP
+						     Trabajo Práctico QR
 *******************************************************************************/
+
 /*-----------------------------------------------------------------------------*
-	- salario: ingreso laboral por hora en pesos corrientes
-	- educ: nivel educativo medido en años de educación formal aprobados
-	- edad: medida en años
-	- sexo: variable dicotómica que toma valor 1 si el encuestado es varón y 0 si es mujer
-	- caba: variable dicotómica donde 1 vive en la Ciudad Autónoma de Buenos Aires y 0 si vive en el Conurbano Bonaerense.
-------------------------------------------------------------------------------*/
+       Carolina Coloma Conte-Grand, Brayan Condori Luque, Agustín Deniard						     
+*------------------------------------------------------------------------------*/
+
 *------------------------------------------------------------------------------*
-**# PREGUNTA 1.a: SUM STATS			    									   *
+**# PREGUNTA 1.a: 			    									   *
 *------------------------------------------------------------------------------*
-
-* Open
-
-	use "${data}/eph14s2_mincer.dta", clear
-
-
-
-
-* Some cleaning
-gen lwage = ln(salario)
-label var lwage "Ingreso horario (log)"
-
-clonevar female = sexo
-recode female (0 = 1) (1 = 0)
-label var female "Mujer (=1)"
-
-label var caba "Reside en Ciudad de Buenos Aires (=1)"
-label var educ "Años de educación aprobados"
 
 * Set up a LaTeX file for output
 file 		open sum_stats using "${tables}/summary_stats.tex", text write replace
@@ -39,7 +19,6 @@ file		write sum_stats ///
 				_n " & N & Media & SD & Min & Max & 10 & 20 & 30 & 40 & 50 & 60 & 70 & 80 & 90  \\" ///
 				_n "\hline"
 					 
-
 
 local summary_vars salario educ edad 
 
@@ -206,7 +185,7 @@ foreach 	var of local summary_vars {
 	file			close sum_stats					 
 
 *------------------------------------------------------------------------------*
-**# PREGUNTA 1.b: SUM STATS													   *
+**# PREGUNTA 1.b: 													   *
 *------------------------------------------------------------------------------*
 
 est clear
@@ -225,4 +204,4 @@ Nota: Probablemente haya una mejor opción que este comando.
 est clear
 eststo: margins, at(edad=30 educ=12) dydx(edad educ) 
 
-etable, margins varlab export("${tables}/margins_mincer.tex") replace
+*etable, margins varlab export("${tables}/margins_mincer.tex") replace
