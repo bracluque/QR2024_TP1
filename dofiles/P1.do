@@ -189,7 +189,7 @@ foreach 	var of local summary_vars {
 *------------------------------------------------------------------------------*
 
 est clear
-eststo: reg	lwage c.educ##c.educ c.edad##c.edad female caba
+eststo: reg	lwage c.educ##c.educ c.edad##c.edad female caba, robust
 esttab using "${tables}/OLS_mincer.tex", label  replace ///
 b(3) se(3) ///
 star(* 0.10 ** 0.05 *** 0.01) ///
