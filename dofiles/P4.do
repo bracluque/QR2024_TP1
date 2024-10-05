@@ -10,7 +10,7 @@
 **# PREGUNTA 4:
 *------------------------------------------------------------------------------*
 
-sqreg lwage educ educ2 edad edad2 female caba, q(5 25 50 75 95) reps(10)
+sqreg lwage educ educ2 edad edad2 female caba, q(5 25 50 75 95) reps(500)
 
 grqreg educ educ2 edad edad2 female caba, quantile(5 25 50 75 95) ci ols
 
