@@ -22,7 +22,17 @@
     colorlinks=true,% make the links colored
 }
 \usepackage{appendix}
-
+\usepackage{adjustbox}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage{rotating}
+\usepackage{fancybox}
+\usepackage{lscape}
+\usepackage{makecell}
+\usepackage{graphicx}
+\usepackage{ltablex}
 
 
 
@@ -59,6 +69,34 @@
 
 \section*{Ejercicio 1}
 
+
+El cuadro \ref{tab:sum_stats} muestra las estadísticas descriptivas de las variables explicativas de la ecuación de Mincer. La muestra total incluye a 7,903 individuos entre 18 y 65 años que residen en Gran Buenos Aires. Para los ingresos horarios de la ocupación principal, observamos una tendencia creciente en la mediana a medida que aumenta la edad. En todos los grupos de edad, existe una brecha entre los individuos del primer y el último decil, siendo más pronunciado en el grupo de 65 años, aunque este grupo tiene una muestra pequeña (80 obs.). Excluyendo este grupo, el rango de personas entre 41 y 64 años muestra la mayor disparidad, con el último decil (91.0) casi seis veces superior al primero (15.5). Respecto a los años de educación recibidos, se observa un patrón similar entre el primer y último decil, con la mayor brecha en los grupos etarios de 25-40 y 41-64 años, excluyendo a los de 65 años. Sin embargo, los años de educación recibidos por individuo mediano en cada grupo etario es de 12 años, excepto para el grupo de 65 años, donde es 11 años. Finalmente, la muestra incluye un 42.2\% de mujeres y un 26.6\% de residentes en CABA
+
+
+\begin{table}[H]
+    \centering
+    \caption[Estadísticas descriptivas]{Estadísticas descriptivas}
+    \label{tab:sum_stats}
+    \begin{adjustbox}{max width=\textwidth}
+        \begin{tabular}{l*{2}{c}}
+            \input{summary_stats}
+        \end{tabular}
+    \end{adjustbox}
+\end{table}
+
+El cuadro \ref{tab:OLS_mincer} muestra los resultados de la estimación de la ecuación de Mincer mediante OLS. Dado que el efecto marginal no es constante para las variables de edad y educación, tomamos como referencia a un individuo de 30 años de edad y 12 años de educación formal. Un incremento de un año en la edad se asocia con un aumento promedio del 1.36\% en el ingreso laboral horario, mientras que un incremento de un año de educación se asocia con un aumento promedio del 8.50\%. Por otro lado, ser mujer se asocia con una reducción promedio del 13.27\% en el ingreso laboral horario en comparación con ser hombre. Por último, residir en CABA se asocia con un aumento promedio del 14.53\% en el ingreso laboral horario, respecto a quienes viven en el Conurbano Bonaerense. Todos los resultados descritos son significativos al 1\%.
+\begin{table}[H]
+    \centering
+    \caption[Estimación de la ecuación de Mincer por MCO]{Estimación de la ecuación de Mincer por MCO}
+    \label{tab:OLS_mincer}
+    \begin{adjustbox}{max width=0.6\textwidth}
+        \begin{tabular}{l*{2}{c}}
+            \input{OLS_mincer}
+        \end{tabular}
+    \end{adjustbox}
+\end{table}
+
+
 \section*{Ejercicio 2}
 
 \section*{Ejercicio 3}
@@ -73,7 +111,7 @@ Este test es útil para estudiar la relevancia del modelo ya que muestra si exis
 
 Graficamos los coeficientes de la regresión en función a los cuantiles $\tau$ estimados. Encontramos que en general todos difieren respecto de la estimación de OLS, aunque esta recta suele encontrarse contenida en la mayoría de los intervalos de confianza estimados por bootstrap. 
 
-\begin{figure}
+\begin{figure}[H]
 	\caption{Coeficientes de la regresión respecto al cuantil $\tau$}
 	\centering
 	\includegraphics[width=0.8\linewidth]{4.png}
