@@ -1,6 +1,7 @@
 {\begin{tabular}{lcccccc} 
 		\hline \hline
-		& \textbf{MCO} & \textbf{Q05} & \textbf{Q25} & \textbf{Q50} & \textbf{Q75} & \textbf{Q95} \\ \hline
+		& & \multicolumn{5}{c}{QR} \\  \cmidrule(lr){3-7}
+		& \textbf{MCO} & \textbf{Q05} & \textbf{Q25} & \textbf{Q50} & \textbf{Q75} & \textbf{Q95} \\  \hline
 		educ & -0.039\sym{***} & 0.0328 & -0.0197 & -0.0257** & -0.0579*** & -0.0623* \\
 		 & (0.013) & (0.0367) & (0.0153) & (0.0126) & (0.0166) & (0.0353) \\
 		educ2 & 0.005\sym{***} &  0.00270* & 0.00444*** & 0.00442*** & 0.00596*** & 0.00606*** \\
@@ -16,6 +17,6 @@
 		Constante & 2.534\sym{***} & 1.276*** & 1.972*** & 2.454*** & 2.985*** & 3.750*** \\
 		& (0.108)  & (0.325) & (0.135) & (0.0990) & (0.143) & (0.277) \\
 		Observaciones & 7,903 & 7,903 & 7,903 & 7,903 & 7,903 & 7,903 \\ \hline
-		\multicolumn{7}{c}{\small{Errores estándar en paréntesis. *** p$<$0.01, ** p$<$0.05, * p$<$0.1. Bootstrap: 500 reposiciones.}} \\
+		\multicolumn{7}{c}{\small{Errores estándar robusto en paréntesis. *** p$<$0.01, ** p$<$0.05, * p$<$0.1. Error estándar en QR por Bootstrap: 500 reposiciones.}} \\
 	\end{tabular}
 }
