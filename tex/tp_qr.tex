@@ -85,10 +85,10 @@ El Cuadro \ref{tab:sum_stats} muestra las estadísticas descriptivas de las vari
     \end{adjustbox}
 \end{table}
 
-El Cuadro \ref{tab:OLS_mincer} muestra los resultados de la estimación de la ecuación de Mincer mediante OLS. Dado que el efecto marginal no es constante para las variables de edad y educación, tomamos como referencia a un individuo de 30 años de edad y 12 años de educación formal. Un incremento de un año en la edad se asocia con un aumento promedio del 1,36\% en el ingreso laboral horario, mientras que un incremento de un año de educación se asocia con un aumento promedio del 8,50\%. Por otro lado, ser mujer se asocia con una reducción promedio del 13,27\% en el ingreso laboral horario en comparación con ser hombre. Por último, residir en CABA se asocia con un aumento promedio del 14,53\% en el ingreso laboral horario, respecto a quienes viven en el Conurbano Bonaerense. Todos los resultados descritos son significativos al 1\%.
+El Cuadro \ref{tab:OLS_mincer} muestra los resultados de la estimación de la ecuación de Mincer mediante MCO. Dado que el efecto marginal no es constante para las variables de edad y educación, tomamos como referencia a un individuo de 30 años de edad y 12 años de educación formal. Un incremento de un año en la edad se asocia con un aumento promedio del 1,36\% en el ingreso laboral horario, mientras que un incremento de un año de educación se asocia con un aumento promedio del 8,50\%. Por otro lado, ser mujer se asocia con una reducción promedio del 13,27\% en el ingreso laboral horario en comparación con ser hombre. Por último, residir en CABA se asocia con un aumento promedio del 14,53\% en el ingreso laboral horario, respecto a quienes viven en el Conurbano Bonaerense. Todos los resultados descritos son significativos al 1\%.
 \begin{table}[H]
     \centering
-    \caption[Estimación de la ecuación de Mincer por MCO y QR]{Estimación de la ecuación de Mincer por MCO}
+    \caption[Estimación de la ecuación de Mincer por MCO y QR]{Estimación de la ecuación de Mincer por MCO y QR}
     \label{tab:OLS_mincer}
     \begin{adjustbox}{max width=0.8\textwidth}
         \begin{tabular}{l*{2}{c}}
@@ -155,7 +155,7 @@ Este test es útil para estudiar la relevancia del modelo ya que muestra si exis
 
 \section*{Ejercicio 4}
 
-Graficamos los coeficientes de la regresión en función a los cuantiles $\tau$ estimados. Los resultados pueden verse en la Figura \ref{fig: 4} Encontramos que en general todos difieren respecto de la estimación de OLS, aunque esta recta suele encontrarse contenida en la mayoría de los intervalos de confianza estimados por bootstrap. 
+Graficamos los coeficientes de la regresión en función a los cuantiles $\tau$ estimados. Los resultados pueden verse en la Figura \ref{fig: 4} Encontramos que en general todos difieren respecto de la estimación de MCO, aunque esta recta suele encontrarse contenida en la mayoría de los intervalos de confianza estimados por bootstrap\footnote{El gráfico muestra la forma funcional de $\beta(\tau)$ para cada uno de los coeficientes estimados, sin embargo, debemos ser cuidadosos al interpretar los gráficos de las variables edad y educación, dado que son no lineales}.  
 
 \begin{figure}[H]
 	\caption{Coeficientes de la regresión respecto al cuantil $\tau$}
@@ -164,7 +164,7 @@ Graficamos los coeficientes de la regresión en función a los cuantiles $\tau$ 
 	\label{fig: 4}
 \end{figure}
 
-El método de regresiones por cuantiles es considera uno semiparamétrico. Tiene un componente paramétrico ya que modela a los cuantiles condicionales de la variable dependiente suponiendo una estructura lineal $Q_y(\tau | X ) = X \beta(\tau)$. A su vez, tiene un componente no paramétrico en que no asume una distribución específica para los errores estándares y estima los cuantiles condicionales a partir de la forma de los datos. Por esto se dice que es un método \textit{distribution free}.
+El método de regresiones por cuantiles se considera uno semiparamétrico. Tiene un componente paramétrico ya que modela a los cuantiles condicionales de la variable dependiente suponiendo una estructura lineal $Q_y(\tau | X ) = X \beta(\tau)$. A su vez, tiene un componente no paramétrico en que no asume una distribución específica para los errores estándares y estima los cuantiles condicionales a partir de la forma de los datos. Por esto se dice que es un método \textit{distribution free}.
 
 \section*{Ejercicio 5}
 
