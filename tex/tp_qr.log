@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.2)  6 OCT 2024 19:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.2)  7 OCT 2024 11:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -669,8 +669,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (./summary_stats.tex) (./OLS_mincer.tex
 ! Undefined control sequence.
-l.5 		educ & -0.039\sym
-                       {***} & 0.0328 & -0.0197 & -0.0257** & -0.0579*** & -...
+l.5 		Años de educación & -0.039\sym
+                                      {***} & 0.0328 & -0.0197 & -0.0257** &...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -678,8 +678,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.7 		educ2 & 0.005\sym
-                       {***} &  0.00270* & 0.00444*** & 0.00442*** & 0.00596...
+l.7 		 Años de educación al cuadrado & 0.005\sym
+                                                  {***} &  0.00270* & 0.0044...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -687,7 +687,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.9 		edad & 0.035\sym
+l.9 		Edad & 0.035\sym
                       {***}& 0.0274** & 0.0445*** & 0.0389*** & 0.0348*** & ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -696,8 +696,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.11 		edad2 & -0.000\sym
-                         {***} & -0.000320** & -0.000506*** & -0.000398*** &...
+l.11 		Edad al cuadrado & -0.000\sym
+                                    {***} & -0.000320** & -0.000506*** & -0....
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -705,8 +705,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.13 		female & -0.142\sym
-                          {***} & -0.323*** & -0.116*** & -0.125*** & -0.129...
+l.13 		Mujer (=1) & -0.142\sym
+                              {***} & -0.323*** & -0.116*** & -0.125*** & -0...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -714,8 +714,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.15 		caba & 0.136\sym
-                       {***} & 0.311*** & 0.117*** & 0.123*** & 0.0954*** & ...
+l.15 		Reside en CABA (=1) & 0.136\sym
+                                      {***} & 0.311*** & 0.117*** & 0.123***...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -748,27 +748,27 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.117     \item C
-                 on $\tau=0,25$:{/usr/local/texlive/2024/texmf-dist/fonts/enc/d
-vips/cm-super/cm-super-ts1.enc}] [3]
-<4.png, id=40, 1041.8925pt x 757.83125pt>
+l.111         \item E
+                     l ingreso laboral horario del cuantil 0,05 es un 27,6\%...
+]
+<4.png, id=36, 1041.8925pt x 757.83125pt>
 File: 4.png Graphic file (type png)
 <use 4.png>
-Package pdftex.def Info: 4.png  used on input line 163.
+Package pdftex.def Info: 4.png  used on input line 130.
 (pdftex.def)             Requested size: 354.86412pt x 258.1102pt.
- [4] [5
+ [3] [4
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.186 
+l.153 
       
 pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.186 
-       <./4.png>] [6] (./tp_qr.aux
+l.153 
+       <./4.png>] [5] (./tp_qr.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 )
@@ -780,28 +780,31 @@ Package rerunfilecheck Info: File `tp_qr.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 14061 strings out of 474116
- 221263 string characters out of 5743682
+ 14067 strings out of 474116
+ 221313 string characters out of 5743682
  1968187 words of memory out of 5000000
- 36172 multiletter control sequences out of 15000+600000
- 567869 words of font info for 73 fonts, out of 8000000 for 9000
+ 36176 multiletter control sequences out of 15000+600000
+ 569074 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,19n,79p,1265b,597s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,19n,79p,1266b,527s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
 /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
-sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
-ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
-cal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loc
-al/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loca
-l/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on tp_qr.pdf (7 pages, 445673 bytes).
+sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr
+/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
+al/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/
+texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
+live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texliv
+e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/
+2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on tp_qr.pdf (6 pages, 473948 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
+ 125 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  16 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
