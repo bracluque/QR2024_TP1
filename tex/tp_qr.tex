@@ -100,50 +100,17 @@ El Cuadro \ref{tab:OLS_mincer} muestra los resultados de la estimación de la ec
 
 \section*{Ejercicio 2}
 
-El Cuadro \ref{tab:OLS_mincer} presenta las estimaciones de los coeficientes del modelo para el $\tau$-ésimo cuantil condicional de la ecuación de Mincer:
+El cuadro \ref{tab:OLS_mincer} presenta las estimaciones de los coeficientes del modelo para el $\tau$-ésimo cuantil condicional de la ecuación de Mincer:
 \[
 Q_{\tau}(y|x)\;=\;x_{i}^{T}\beta(\tau)
 \]
-en donde $\tau\in\{0.05,0.25,0.50,0.75,0.95\}$, $y$ es el logaritmo natural del ingreso laboral por hora y $x$ es el vector de variables explicativas para esta especificación de la ecuación de Mincer, conformada por los años de educación (y su cuadrado), la edad (y su cuadrado), el sexo y la ubicación geográfica. Dado que el efecto marginal no es constante para las variables de edad y educación, tomamos como referencia a un individuo de 30 años de edad y 12 años de educación formal.
-\begin{itemize}
-    \item Con $\tau=0,05$:
+en donde $\tau\in\{0.05,0.25,0.50,0.75,0.95\}$, $y$ es el logaritmo natural del ingreso laboral por hora y $x$ es el vector de variables explicativas para esta especificación de la ecuación de Mincer, conformada por los años de educación (y su cuadrado), la edad (y su cuadrado), el sexo y la ubicación geográfica. Cabe destacar que la interpretación de los efectos parciales no es idéntica a la del modelo para la media condicional estimado por OLS en el punto anterior:
     \begin{itemize}
-        \item Un año adicional de educación para una persona con 12 año de educación formal se traduce, \emph{ceteris paribus}, en un aumento del 9,76\% en el ingreso laboral horario del cuantil 0,05.
-        \item Un año adicional de edad para una persona de 30 años se traduce, \emph{ceteris paribus}, en un aumento del 0,82\% en el ingreso laboral horario del cuantil 0,05.
-        \item El ingreso laboral horario del cuantil 0,05 es un 27,6\% menor para las mujeres en comparación con los hombres.
-        El ingreso laboral horario del cuantil 0,05 es un 36,48\% mayor para quienes residen en Capital Federal en comparación con aquellos que viven en el conurbano bonaerense.
+        \item Un año adicional de educación para una persona con 12 años de educación formal se traduce, \emph{ceteris paribus}, en un aumento del 9,76\% en el ingreso laboral horario del cuantil 0,05; del 8,69\% para el cuantil 0,25; del 8,04\% para el cuantil 0,50; del 8,51\% para el cuantil 0,75; y del 8,31\% para el cuantil 0,95. En todos los casos, el coeficiente que acompaña al término cuadrático de la variable \emph{educ} es significativo al 10\% (y para algunos cuantiles también lo es al 1\%), mientras que el coeficiente que acompaña al termino lineal de esta variable no es significativo para algunos cuantiles (0,05 y 0,25) y presenta distintos niveles de significatividad para otros.
+        \item Un año adicional de edad para una persona de 30 años se traduce, \emph{ceteris paribus}, en un aumento del 0,82\% en el ingreso laboral horario del cuantil 0,05; del 1,41\% para el cuantil 0,25; del 1,5\% para el cuantil 0,50; del 1,48\% para el cuantil 0,75; y del 1,19\% para el cuantil 0,95. En todos los casos, el coeficiente que acompaña al término lineal de la variable \emph{edad} es significativo al 5\% (y para algunos cuantiles también lo es al 1\%), mientras que el coeficiente que acompaña al término cuadrático de esta variable lo es al 10\% (y para algunos cuantiles también lo es al 5\% y al 1\%). 
+        \item El ingreso laboral horario del cuantil 0,05 es un 27,6\% menor para las mujeres en comparación con los hombres; un 10,95\% para el cuantil 0,25; un 11,75\% para el cuantil 0,50; un 12,1\% para el cuantil 0,75; y un 10,15\% para el cuantil 0,95. En todos los casos, el coeficiente que acompaña a la variable \emph{female} es significativo al 1\%.
+        \item El ingreso laboral horario del cuantil 0,05 es un 36,48\% mayor para quienes residen en Capital Federal en comparación con aquellos que viven en el conurbano bonaerense; un 12,41\% para el cuantil 0,25; un 13,09\% para el cuantil 0,50; un 10\% para el cuantil 0,75; y un 14,91\% para el cuantil 0,95. En todos los casos, el coeficiente que acompaña a la variable \emph{caba} es significativo al 1\%.
     \end{itemize}
-    Los coeficientes que acompañan a las variables \emph{caba} y \emph{female} son significativos al 1\%, mientras que los que acompañan a la variable \emph{edad} (tanto para el término lineal como para el cuadrático) son significativos al 5\%.
-    \item Con $\tau=0,25$:
-    \begin{itemize}
-        \item Un año adicional de educación para una persona con 12 año de educación formal se traduce, \emph{ceteris paribus}, en un aumento del 8,69\% en el ingreso laboral horario del cuantil 0,25.
-        \item Un año adicional de edad para una persona de 30 años se traduce, \emph{ceteris paribus}, en un aumento del 1,41\% en el ingreso laboral horario del cuantil 0,25.
-        \item El ingreso laboral horario del cuantil 0,25 es un 10,95\% menor para las mujeres en comparación con los hombres.
-        El ingreso laboral horario del cuantil 0,25 es un 12,41\% mayor para quienes residen en Capital Federal en comparación con aquellos que viven en el conurbano bonaerense.
-    \end{itemize}
-    \item Con $\tau=0,5$:
-    \begin{itemize}
-        \item Un año adicional de educación para una persona con 12 año de educación formal se traduce, \emph{ceteris paribus}, en un aumento del 8,04\% en el ingreso laboral horario del cuantil 0,5.
-        \item Un año adicional de edad para una persona de 30 años se traduce, \emph{ceteris paribus}, en un aumento del 1,5\% en el ingreso laboral horario del cuantil 0,5.
-        \item El ingreso laboral horario del cuantil 0,5 es un 11,75\% menor para las mujeres en comparación con los hombres.
-        El ingreso laboral horario del cuantil 0,5 es un 13,09\% mayor para quienes residen en Capital Federal en comparación con aquellos que viven en el conurbano bonaerense.
-    \end{itemize}
-    \item Con $\tau=0,75$:
-    \begin{itemize}
-        \item Un año adicional de educación para una persona con 12 año de educación formal se traduce, \emph{ceteris paribus}, en un aumento del 8,51\% en el ingreso laboral horario del cuantil 0,75.
-        \item Un año adicional de edad para una persona de 30 años se traduce, \emph{ceteris paribus}, en un aumento del 1,48\% en el ingreso laboral horario del cuantil 0,75.
-        \item El ingreso laboral horario del cuantil 0,75 es un 12,1\% menor para las mujeres en comparación con los hombres.
-        El ingreso laboral horario del cuantil 0,75 es un 10\% mayor para quienes residen en Capital Federal en comparación con aquellos que viven en el conurbano bonaerense.
-    \end{itemize}
-    \item Con $\tau=0,95$:
-    \begin{itemize}
-        \item Un año adicional de educación para una persona con 12 año de educación formal se traduce, \emph{ceteris paribus}, en un aumento del 8,31\% en el ingreso laboral horario del cuantil 0,95.
-        \item Un año adicional de edad para una persona de 30 años se traduce, \emph{ceteris paribus}, en un aumento del 1,19\% en el ingreso laboral horario del cuantil 0,95.
-        \item El ingreso laboral horario del cuantil 0,95 es un 10,15\% menor para las mujeres en comparación con los hombres.
-        El ingreso laboral horario del cuantil 0,95 es un 14,91\% mayor para quienes residen en Capital Federal en comparación con aquellos que viven en el conurbano bonaerense.
-    \end{itemize}
-\end{itemize}
-En todos los casos, los coeficientes que acompañan a las variables \emph{caba}, \emph{female} y son significativos al 1\%. Por su parte, los coeficientesque acompañan a la variable \emph{edad} (tanto para el término lineal como para el cuadrático) son simpre significativos pero a distintos niveles de significatividad. Finalmente, los coeficientes que acompañan a la variable \emph{edad} son siempre significativos para el término cuadrático (aunque a distintos niveles de significatividad), pero no para el término lineal (que es no significativo para los cuantilies 0,05 y 0,25). 
 
 \section*{Ejercicio 3}
 
@@ -182,6 +149,6 @@ El método de regresiones por cuantiles se considera uno semiparamétrico. Tiene
     \label{tab:residuos_QR}
 \end{table}
 
-El Cuadro \ref{tab:residuos_QR} presenta la frecuencia absoluta (relativa) de residuos negativos, nulos y positivos que surgen del modelo para el $\tau$-ésimo cuantil condicional de la ecuación de Mincer, con $\tau\in\{0,25,0,50,0,75\}$. Podemos ver que el cómputo de la diferencia entre los valores observados para el ingreso laboral horario y los valores predichos por el modelo para el $\tau$-ésimo cuantil condicional da como resultado en los 3 casos que aproximadamente un $\tau\%$ de las observaciones cuentan con un residuo negativo, mientras que aproximadamente un $(1-\tau)\%$ de las observaciones cuentan con un residuo positivo. La discrepacia corresponde a las observaciones para las cuales esta diferencia resulta ser nula, cuya frecuencia absoluta es exactamente igual a la cantidad de parámetros a estimar en nuestra especificación de la ecuación de Mincer.
+El Cuadro \ref{tab:residuos_QR} presenta la frecuencia absoluta (relativa) de residuos negativos, nulos y positivos que surgen del modelo para el $\tau$-ésimo cuantil condicional de la ecuación de Mincer, con $\tau\in\{0,25,0,50,0,75\}$. Podemos ver que el cómputo de la diferencia entre los valores observados para el ingreso laboral horario y los valores predichos por el modelo para el $\tau$-ésimo cuantil condicional da como resultado en los 3 casos que aproximadamente un $\tau\%$ de las observaciones cuentan con un residuo negativo, mientras que aproximadamente un $(1-\tau)\%$ de las observaciones cuentan con un residuo positivo. La discrepacia corresponde a las observaciones para las cuales esta diferencia resulta ser nula, cuya frecuencia absoluta es exactamente igual a la cantidad de parámetros a estimar en nuestra especificación de la ecuación de Mincer.\footnote{Los residuos nulos correspondientes a la estimación del modelo para los cuantiles condicionales 0,25 y 0,5 son 8 (y no 7, que es la cantidad de parámetros a estimar en nuestra especificación de la ecuación de Mincer) debido a que en ambos casos tenemos dos observaciones cuyo residuo es igual a 0 con el mismo valor para el ingreso laboral horario. Dado que esto no ocurre en la estimación del modelo para el cuantil condicional 0,75, la cantidad de residuos nulos si coincide con la cantidad de parámetros a estimar.}
 
 \end{document}
